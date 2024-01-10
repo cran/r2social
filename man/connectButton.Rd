@@ -11,10 +11,11 @@ connectButton(
   position = c("left", "right", "inline"),
   display.inline = TRUE,
   link.out = TRUE,
+  plain = FALSE,
   visit.us = FALSE,
   facebook = FALSE,
   linkedin = FALSE,
-  twitter = FALSE,
+  x = FALSE,
   tumblr = FALSE,
   pinterest = FALSE,
   whatsapp = FALSE,
@@ -33,7 +34,7 @@ connectButton(
 
 \item{image}{image link only for pinterest}
 
-\item{text}{text link for twitter}
+\item{text}{text link for X}
 
 \item{position}{position of buttons e.g "left","right","bottom","inline"}
 
@@ -41,13 +42,15 @@ connectButton(
 
 \item{link.out}{visit custom link}
 
+\item{plain}{logical. with or without background}
+
 \item{visit.us}{visit custom link}
 
 \item{facebook}{link to an account on Facebook}
 
 \item{linkedin}{link to an account on Linkedin}
 
-\item{twitter}{link to an account on Twitter}
+\item{x}{link to an account on X}
 
 \item{tumblr}{link to an account on Tumblr}
 
@@ -80,7 +83,7 @@ Buttons for others to connect socially to you
 \section{Examples for r2social}{
 
 More examples and demo pages are located at this link -
-\url{https://rpkg.net/package/r2social}.
+\url{https://r2social.obi.obianom.com}.
 }
 
 \examples{
@@ -93,7 +96,21 @@ link = "//www.linkedin.com/in/oobianom",
 linkedin = TRUE,
 position = "right")
 connectButton(
-link = "//twitter.com/R2Rpkg",
-twitter = TRUE, position = "inline")
+link = "//x.com/R2Rpkg",
+x = TRUE, position = "inline")
+
+# NOT styled
+connectButton(
+link = "//rpkg.net",
+visit.us = TRUE,
+position = "left")
+connectButton(
+link = "//www.linkedin.com/in/oobianom",
+linkedin = TRUE,
+plain = TRUE,
+position = "right")
+connectButton(
+link = "//x.com/R2Rpkg",
+x = TRUE, position = "inline")
 
 }

@@ -10,20 +10,19 @@ shareButton(
   text = NULL,
   position = c("left", "right", "inline"),
   text.color = "black",
+  plain = FALSE,
   facebook = TRUE,
   linkedin = TRUE,
-  twitter = TRUE,
+  x = FALSE,
   tumblr = FALSE,
   pinterest = FALSE,
   whatsapp = FALSE,
-  reddit = TRUE,
-  instagram = FALSE,
+  reddit = FALSE,
   blogger = FALSE,
-  weibo = TRUE,
+  weibo = FALSE,
   tiktok = FALSE,
   vk = FALSE,
   telegram = FALSE,
-  youtube = FALSE,
   visit.us = FALSE
 )
 }
@@ -38,11 +37,13 @@ shareButton(
 
 \item{text.color}{text color e.g black}
 
+\item{plain}{logical. with or without background}
+
 \item{facebook}{share on Facebook}
 
 \item{linkedin}{share on Linkedin}
 
-\item{twitter}{share on Twitter}
+\item{x}{share on Twitter}
 
 \item{tumblr}{share on Tumblr}
 
@@ -52,19 +53,15 @@ shareButton(
 
 \item{reddit}{share on Reddit}
 
-\item{instagram}{share on Instagram}
+\item{blogger}{share on Blogger}
 
-\item{blogger}{share on blogger}
+\item{weibo}{share on Weibo}
 
-\item{weibo}{share on weibo}
-
-\item{tiktok}{share on tiktok}
+\item{tiktok}{share on Tiktok}
 
 \item{vk}{share on VK or VKontakte}
 
 \item{telegram}{share on Telegram}
-
-\item{youtube}{share on Youtube}
 
 \item{visit.us}{share on custom link}
 }
@@ -84,6 +81,7 @@ More examples and demo pages are located at this link -
 
 shareButton(link = "http://rpkg.net", position = "left")
 shareButton(link = "http://obianom.com", position = "right")
-shareButton(link = "http://66pharm.com", position = "inline")
+shareButton(link = "https://shinyappstore.com/", plain = TRUE, position = "inline") #plain styling
+shareButton(link = "https://shinyappstore.com/", plain = FALSE, position = "inline") #beautified
 
 }

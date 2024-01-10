@@ -9,11 +9,12 @@ socialButtons(
   type = c("share", "connect"),
   image = NULL,
   text = NULL,
+  plain = FALSE,
   position = c("left", "right", "inline"),
   text.color = "white",
   facebook = FALSE,
   linkedin = FALSE,
-  twitter = FALSE,
+  x = FALSE,
   tumblr = FALSE,
   pinterest = FALSE,
   whatsapp = FALSE,
@@ -23,6 +24,7 @@ socialButtons(
   weibo = FALSE,
   tiktok = FALSE,
   vk = FALSE,
+  baidu = FALSE,
   telegram = FALSE,
   youtube = FALSE,
   visit.us = FALSE,
@@ -36,7 +38,9 @@ socialButtons(
 
 \item{image}{image link for pinterest only}
 
-\item{text}{text link for twitter only}
+\item{text}{text link for x only}
+
+\item{plain}{logical. with or without background}
 
 \item{position}{position of buttons e.g "left","right","bottom","inline"}
 
@@ -46,7 +50,7 @@ socialButtons(
 
 \item{linkedin}{share on Linkedin}
 
-\item{twitter}{share on Twitter}
+\item{x}{share on Twitter}
 
 \item{tumblr}{share on Tumblr}
 
@@ -66,6 +70,8 @@ socialButtons(
 
 \item{vk}{share on VK or VKontakte}
 
+\item{baidu}{share on Baidu}
+
 \item{telegram}{share on Telegram}
 
 \item{youtube}{share on Youtube}
@@ -75,7 +81,7 @@ socialButtons(
 \item{link.out}{hyperlink to a page}
 }
 \value{
-Resizeable split screen container
+Social links button to be placed on pages
 }
 \description{
 For use in making buttons to share a page or connect to your social media
@@ -87,7 +93,10 @@ More examples and demo pages are located at this link -
 }
 
 \examples{
+# styled
+socialButtons("https://shinyappstore.com/",facebook = TRUE)
 
-socialButtons("https://66pharm.com",facebook = TRUE)
+# plain
+socialButtons("https://shinyappstore.com/",plain=TRUE, linkedin = TRUE)
 
 }

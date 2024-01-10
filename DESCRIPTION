@@ -1,11 +1,11 @@
 Package: r2social
 Type: Package
 Title: App Inclusion of Social Sharing and Connect Buttons
-Version: 1.0
+Version: 1.1
 Authors@R: c(
     person("Obinna", "Obianom", email = "idonshayo@gmail.com", role = c("aut", "cre")))
 Maintainer: Obinna Obianom <idonshayo@gmail.com>
-Description: Implementation of 'JavaScript' and 'CSS' styles to allow easy incorporation of various social media elements on a page. The elements include addition of share buttons or connect with us buttons or hyperlink buttons to 'Shiny' applications or dashboards and 'Rmardown' documents.  
+Description: Implementation of 'JQuery' <https://jquery.com> and 'CSS' styles to allow easy incorporation of various social media elements on a page. The elements include addition of share buttons or connect with us buttons or hyperlink buttons to 'Shiny' applications or dashboards and 'Rmarkdown' documents.Sharing capability on social media platforms including 'Facebook' <https://www.facebook.com>, 'Linkedin' <https://www.linkedin.com>, 'X/Twitter' <https://x.com>, 'Tumblr' <https://www.tumblr.com>, 'Pinterest' <https://www.pinterest.com>, 'Whatsapp' <https://www.whatsapp.com>, 'Reddit' <https://www.reddit.com>, 'Baidu' <https://www.baidu.com>, 'Blogger' <https://www.blogger.com>, 'Weibo' <https://www.weibo.com>, 'Instagram' <https://www.instagram.com>, 'Telegram' <https://www.telegram.me>, 'Youtube' <https://www.youtube.com>.  
 License: MIT + file LICENSE
 URL: https://r2social.obi.obianom.com
 BugReports: https://github.com/oobianom/r2social/issues
@@ -16,9 +16,9 @@ Encoding: UTF-8
 VignetteBuilder: knitr
 Language: en-US
 LazyData: false
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 NeedsCompilation: no
-Packaged: 2022-12-06 15:27:43 UTC; in198
+Packaged: 2024-01-10 12:09:23 UTC; in198
 Author: Obinna Obianom [aut, cre]
 Repository: CRAN
-Date/Publication: 2022-12-07 12:10:02 UTC
+Date/Publication: 2024-01-10 12:40:05 UTC
