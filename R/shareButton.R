@@ -21,6 +21,10 @@
 #' @param vk share on VK or VKontakte
 #' @param telegram share on Telegram
 #' @param visit.us share on custom link
+#' @param bg.col background color for the icons.
+#'
+#' @note
+#' 'bg.col' argument is only functional if 'plain' argument is set to false
 #'
 #' @section Examples for r2social:
 #' More examples and demo pages are located at this link -
@@ -45,6 +49,7 @@ shareButton <- function(link,
                         plain = FALSE,
                         facebook = TRUE,
                         linkedin = TRUE,
+                        bg.col = NULL,
                         x = FALSE,
                         tumblr = FALSE,
                         pinterest = FALSE,
@@ -65,6 +70,7 @@ shareButton <- function(link,
     image = image,
     text = text,
     plain = plain,
+    bg.col = bg.col,
     position = position,
     text.color = text.color,
     facebook = facebook,

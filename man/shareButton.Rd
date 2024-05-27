@@ -13,6 +13,7 @@ shareButton(
   plain = FALSE,
   facebook = TRUE,
   linkedin = TRUE,
+  bg.col = NULL,
   x = FALSE,
   tumblr = FALSE,
   pinterest = FALSE,
@@ -43,6 +44,8 @@ shareButton(
 
 \item{linkedin}{share on Linkedin}
 
+\item{bg.col}{background color for the icons.}
+
 \item{x}{share on Twitter}
 
 \item{tumblr}{share on Tumblr}
@@ -70,6 +73,9 @@ Share link button via social media platforms
 }
 \description{
 Customize social buttons available for sharing of pages
+}
+\note{
+'bg.col' argument is only functional if 'plain' argument is set to false
 }
 \section{Examples for r2social}{
 

@@ -1,7 +1,8 @@
 Package: r2social
 Type: Package
-Title: App Inclusion of Social Sharing and Connect Buttons
-Version: 1.1
+Title: Seamless Integration of Sharing and Connect Buttons in Markdown
+        and Apps
+Version: 1.2
 Authors@R: c(
     person("Obinna", "Obianom", email = "idonshayo@gmail.com", role = c("aut", "cre")))
 Maintainer: Obinna Obianom <idonshayo@gmail.com>
@@ -9,8 +10,8 @@ Description: Implementation of 'JQuery' <https://jquery.com> and 'CSS' styles to
 License: MIT + file LICENSE
 URL: https://r2social.obi.obianom.com
 BugReports: https://github.com/oobianom/r2social/issues
-Depends: R (>= 3.6)
-Imports: utils, htmltools, shiny
+Depends: R (> 3.6)
+Imports: utils, htmltools, shiny, quickcode
 Suggests: rmarkdown, knitr
 Encoding: UTF-8
 VignetteBuilder: knitr
@@ -18,7 +19,7 @@ Language: en-US
 LazyData: false
 RoxygenNote: 7.2.3
 NeedsCompilation: no
-Packaged: 2024-01-10 12:09:23 UTC; in198
+Packaged: 2024-05-27 10:04:35 UTC; in198
 Author: Obinna Obianom [aut, cre]
 Repository: CRAN
-Date/Publication: 2024-01-10 12:40:05 UTC
+Date/Publication: 2024-05-27 10:20:02 UTC

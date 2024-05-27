@@ -1,21 +1,78 @@
 ---
-title: "r2social R package example: Add social share and connect buttons on all your Rmarkdown documents and Shiny applications"
+title: "r2social R package new version with profile card"
 output:
   html_document:
     theme: default
 ---
 
-
-
-#### Example
-
-```{r, results='asis'}
+```{r}
 library(r2social)
 r2social.scripts()
-shareButton(link = "http://rpkg.net", position = "left")
+
+
+```
+
+
+#### Feature: Profile card with social links
+
+```{r}
+profileDisplay1(list(
+  a = list(
+    name = "Obi Obianom",
+    title = "Senior Scientist",
+    image = "https://r2social.obi.obianom.com/misc/team3.jpg",
+    social = list(
+      list(name = "x",
+           link = "https://x.com/R2Rpkg"),
+      list(name = "linkedin",
+           link = "https://linkedin.com/oobianom"),
+      list(name = "website",
+           link = "https://obianom.com"),
+      list(name = "youtube",
+           link = "https://youtube.com/R2Rpkg")
+    )
+  ),
+  b = list(
+    name = "William Hane",
+    title = "Core Developer",
+    image = "https://r2social.obi.obianom.com/misc/team1.jpg",
+    social = list(list(name = "youtube",
+                       link = "https://youtube.com/R2Rpkg"))
+  )
+))
+
+```
+#### Feauture: Social links alon
+
+```{r, results='asis'}
+
+shareButton(link = "http://rpkg.net", position = "left", weibo = TRUE, x = TRUE)
 shareButton(link = "http://obianom.com", plain = TRUE, position = "right")
 shareButton(link = "http://shinyappstore.com", plain = TRUE, position = "inline")
-
+profileDisplay2(list(
+  a = list(
+    name = "Obi Obianom",
+    title = "Senior Scientist",
+    image = "https://r2social.obi.obianom.com/misc/team3.jpg",
+    social = list(
+      list(name = "x",
+           link = "https://x.com/R2Rpkg"),
+      list(name = "linkedin",
+           link = "https://linkedin.com/oobianom"),
+      list(name = "website",
+           link = "https://obianom.com"),
+      list(name = "youtube",
+           link = "https://youtube.com/R2Rpkg")
+    )
+  ),
+  b = list(
+    name = "William Hane",
+    title = "Core Developer",
+    image = "https://r2social.obi.obianom.com/misc/team1.jpg",
+    social = list(list(name = "youtube",
+                       link = "https://youtube.com/R2Rpkg"))
+  )
+))
 ```
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Laoreet sit amet cursus sit amet dictum sit. In pellentesque massa placerat duis ultricies lacus sed.

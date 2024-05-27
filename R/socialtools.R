@@ -26,6 +26,10 @@
 #' @param telegram share on Telegram
 #' @param visit.us visit a direct link
 #' @param link.out hyperlink to a page
+#' @param bg.col background color for the icons.
+#'
+#' @note
+#' 'bg.col' argument is only functional if 'plain' argument is set to false
 #'
 #' @section Examples for r2social:
 #' More examples and demo pages are located at this link -
@@ -49,6 +53,7 @@ socialButtons <- function(link,
                           plain = FALSE,
                           position = c("left", "right", "inline"),
                           text.color = "white",
+                          bg.col = NULL,
                           facebook = FALSE,
                           linkedin = FALSE,
                           x = FALSE,
@@ -101,13 +106,15 @@ socialButtons <- function(link,
 
     # add social icons
     lapply(soc.each, function(isc) {
+      col1 <- isc$color
+      if(quickcode::not.null(bg.col)) col1 <- bg.col
       if (isc$show) {
         shiny::tags$a(
           href = ifelse(type == "share", isc$link, link),
           target = "_r2socialxlink",
           shiny::div(
             class = paste0("social-btn-", position),
-            style = paste0("background-color:", ifelse(plain,'',isc$color)),
+            style = paste0("background-color:", ifelse(plain,'',col1)),
             shiny::div(
               class = paste0("r2social-icons-", position, " r2s-ico-", gsub("[^[:alnum:]]", "-", isc$name))
             ),

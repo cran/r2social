@@ -11,6 +11,7 @@ connectButton(
   position = c("left", "right", "inline"),
   display.inline = TRUE,
   link.out = TRUE,
+  bg.col = NULL,
   plain = FALSE,
   visit.us = FALSE,
   facebook = FALSE,
@@ -41,6 +42,8 @@ connectButton(
 \item{display.inline}{TRUE or FALSE if the button should be inline}
 
 \item{link.out}{visit custom link}
+
+\item{bg.col}{background color for the icons.}
 
 \item{plain}{logical. with or without background}
 
@@ -79,6 +82,9 @@ Connect with me/us button via social links
 }
 \description{
 Buttons for others to connect socially to you
+}
+\note{
+'bg.col' argument is only functional if 'plain' argument is set to false
 }
 \section{Examples for r2social}{
 

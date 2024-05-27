@@ -24,6 +24,10 @@
 #' @param vk link to an account on VK or VKontakte
 #' @param telegram link to an account on Telegram
 #' @param youtube link to an account on Youtube
+#' @param bg.col background color for the icons.
+#'
+#' @note
+#' 'bg.col' argument is only functional if 'plain' argument is set to false
 #'
 #' @section Examples for r2social:
 #' More examples and demo pages are located at this link -
@@ -66,6 +70,7 @@ connectButton <- function(link,
                           position = c("left", "right", "inline"),
                           display.inline = TRUE,
                           link.out = TRUE,
+                          bg.col = NULL,
                           plain = FALSE,
                           visit.us = FALSE,
                           facebook = FALSE,
@@ -98,6 +103,7 @@ connectButton <- function(link,
       text.color = "white",
       facebook = facebook,
       linkedin = linkedin,
+      bg.col = bg.col,
       x = x,
       tumblr = tumblr,
       pinterest = pinterest,
