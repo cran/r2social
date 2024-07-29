@@ -2,7 +2,7 @@ Package: r2social
 Type: Package
 Title: Seamless Integration of Sharing and Connect Buttons in Markdown
         and Apps
-Version: 1.2
+Version: 1.2.1
 Authors@R: c(
     person("Obinna", "Obianom", email = "idonshayo@gmail.com", role = c("aut", "cre")))
 Maintainer: Obinna Obianom <idonshayo@gmail.com>
@@ -19,7 +19,7 @@ Language: en-US
 LazyData: false
 RoxygenNote: 7.2.3
 NeedsCompilation: no
-Packaged: 2024-05-27 10:04:35 UTC; in198
+Packaged: 2024-07-29 19:41:19 UTC; in198
 Author: Obinna Obianom [aut, cre]
 Repository: CRAN
-Date/Publication: 2024-05-27 10:20:02 UTC
+Date/Publication: 2024-07-29 22:00:02 UTC
